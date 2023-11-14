@@ -1,0 +1,28 @@
+{
+  "name": "@galynsky/store",
+  "version": "1.0.0",
+  "description": "Store",
+  "type": "module",
+  "main": "./dist/bundle.cjs.js",
+  "module": "./dist/bundle.es.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build-declarations && npm run build-bundle",
+    "build-declarations": "tsc --declaration --emitDeclarationOnly",
+    "build-bundle": "rollup --config"
+  },
+  "keywords": ["store"],
+  "author": "Vladimir Galynsky",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "rollup": "^4.4.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  }
+}

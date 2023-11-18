@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Store",
   "type": "module",
-  "main": "./dist/bundle.cjs.js",
-  "module": "./dist/bundle.es.js",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
@@ -12,7 +12,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build-declarations && npm run build-bundle",
-    "build-declarations": "tsc --declaration --emitDeclarationOnly",
+    "build-declarations": "tsc",
     "build-bundle": "rollup --config"
   },
   "keywords": ["store"],

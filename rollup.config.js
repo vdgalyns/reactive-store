@@ -6,12 +6,12 @@ export default defineConfig({
     input: 'src/index.ts',
     output: [
         {
-            file: './dist/bundle.cjs.js',
-            format: 'cjs'
+            format: 'cjs',
+            file: 'dist/index.cjs.js'
         },
         {
-            file: './dist/bundle.es.js',
-            format: 'esm'
+            format: 'esm',
+            file: 'dist/index.esm.js'
         }
     ],
     plugins: [typescript(), terser()]
